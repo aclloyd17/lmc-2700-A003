@@ -11,14 +11,18 @@ class Movie {
 
 //add a movie OBJECT to the allMovies array
 let addMovie = (movie) => {
-
+  allMovies.push(movie);
 }
 
 //iterate through all elements of allMovies array
 //print out to console in a correct format
 //print out the total number of movies in allMovies array
 let printMovies = () => {
-
+  for (let i = 0; i < allMovies.length; i++) {
+    curr = allMovies[i];
+    console.log(curr.name + ", rating of " + curr.rating + ", havewatched: " + curr.haveWatched);
+  }
+  console.log(allMovies.length);
 }
 
 
