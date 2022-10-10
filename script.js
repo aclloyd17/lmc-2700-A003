@@ -2,7 +2,11 @@ let allMovies = [];
 
 //Define a movie class with parameters title (string), rating (number) and haveWatched (boolean)
 class Movie {
-
+  constructor(title, rating, haveWatched) {
+    this.title = title;
+    this.rating = rating;
+    this.haveWatched = haveWatched;
+  }
 }
 
 //add a movie OBJECT to the allMovies array
