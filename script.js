@@ -19,6 +19,7 @@ let addMovie = (movie) => {
 //print out to console in a correct format
 //print out the total number of movies in allMovies array
 let printMovies = () => {
+  console.log("Printing all movies....");
   for (curr of allMovies) {
     console.log(curr.title + ", rating of " + curr.rating + ", havewatched: " + curr.haveWatched);
   }
@@ -29,11 +30,11 @@ let printMovies = () => {
 //print out to console, only the movies that has a rating higher than rating(argument)
 //print out the total number of matches
 let highRatings = (rating) => {
+  console.log("printing movie that has a rating higher than " + rating);
   let count = 0;
   for (curr of allMovies) {
-    console.log("pringting movie that has a rating higher than " + rating);
     if (curr.rating > rating) {
-      console.log(curr.name + " has a rating of " + curr.rating);
+      console.log(curr.title + " has a rating of " + curr.rating);
       count = count + 1;
     }
   }
