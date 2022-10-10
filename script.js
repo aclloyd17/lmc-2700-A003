@@ -41,7 +41,7 @@ let highRatings = (rating) => {
 //Toggle the 'haveWatched' property of the specified movie 
 let changeWatched = (title) => {
   for (curr of allMovies) {
-    if (curr.title.equals(title)) {
+    if (curr.title === title) {
       curr.hasWatched = !curr.hasWatched;
     }
   }
