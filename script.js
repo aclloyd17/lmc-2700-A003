@@ -20,7 +20,7 @@ let addMovie = (movie) => {
 //print out the total number of movies in allMovies array
 let printMovies = () => {
   for (curr of allMovies) {
-    console.log(curr.name + ", rating of " + curr.rating + ", havewatched: " + curr.haveWatched);
+    console.log(curr.title + ", rating of " + curr.rating + ", havewatched: " + curr.haveWatched);
   }
   console.log("You have " + allMovies.length + " movies in total");
 }
@@ -33,13 +33,19 @@ let highRatings = (rating) => {
     console.log("pringting movie that has a rating higher than " + rating);
     if (curr.rating > rating) {
       console.log(curr.name + " has a rating of " + curr.rating);
-
+    }
+  }
 }
 
 
 //Toggle the 'haveWatched' property of the specified movie 
 let changeWatched = (title) => {
-
+  for (curr of allMovies) {
+    if (curr.title.equals(title)) {
+      curr.hasWatched = !curr.hasWatched;
+    }
+  }
+  console.log("changing the status of the movie...")
 }
 
 
