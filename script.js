@@ -34,7 +34,7 @@ let highRatings = (rating) => {
     console.log("pringting movie that has a rating higher than " + rating);
     if (curr.rating > rating) {
       console.log(curr.name + " has a rating of " + curr.rating);
-      let count = count + 1;
+      count = count + 1;
     }
   }
   console.log("In total, there are " + count + " matches");
