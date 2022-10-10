@@ -12,23 +12,27 @@ class Movie {
 //add a movie OBJECT to the allMovies array
 let addMovie = (movie) => {
   allMovies.push(movie);
+  console.log("A new movie is added");
 }
 
 //iterate through all elements of allMovies array
 //print out to console in a correct format
 //print out the total number of movies in allMovies array
 let printMovies = () => {
-  for (let i = 0; i < allMovies.length; i++) {
-    curr = allMovies[i];
+  for (curr of allMovies) {
     console.log(curr.name + ", rating of " + curr.rating + ", havewatched: " + curr.haveWatched);
   }
-  console.log(allMovies.length);
+  console.log("You have " + allMovies.length + " movies in total");
 }
 
 
 //print out to console, only the movies that has a rating higher than rating(argument)
 //print out the total number of matches
 let highRatings = (rating) => {
+  for (curr of allMovies) {
+    console.log("pringting movie that has a rating higher than " + rating);
+    if (curr.rating > rating) {
+      console.log(curr.name + " has a rating of " + curr.rating);
 
 }
 
