@@ -46,7 +46,7 @@ let highRatings = (rating) => {
 let changeWatched = (title) => {
   
   let found = allMovies.find((movie) => movie.title === title);
-  let found.hasWatched = !found.hasWatched;
+  found.haveWatched = !found.haveWatched;
   console.log("changing the status of the movie...")
 }
 
